@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            div {
+                font-family: sans-serif;
+                color: #202122;
+                direction: ltr;
+                font-size: calc(1em * 0.875);
+                line-height: 1.6;
+            }
+            table {
+                font-family: sans-serif;
+                direction: ltr;
+                line-height: 1.6;
+                font-size: 100%;
+                background-color: #f8f9fa;
+                color: #202122;
+                margin: 1em 0;
+                border: 1px solid #a2a9b1;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            tr {
+                font-family: sans-serif;
+                direction: ltr;
+                line-height: 1.6;
+                font-size: 100%;
+                color: #202122;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            th {
+                font-family: sans-serif;
+                direction: ltr;
+                line-height: 1.6;
+                font-size: 100%;
+                color: #202122;
+                border-collapse: collapse;
+                border: 1px solid #a2a9b1;
+                padding: 0.2em 0.4em;
+                background-color: #eaecf0;
+                text-align: center;
+            }
+            td {
+                font-family: sans-serif;
+                direction: ltr;
+                line-height: 1.6;
+                font-size: 100%;
+                color: #202122;
+                border-collapse: collapse;
+                text-align: center;
+                border: 1px solid #a2a9b1;
+                padding: 0.2em 0.4em;
+            }
+            p {
+                font-family: sans-serif;
+                direction: ltr;
+                line-height: 1.6;
+                font-size: 100%;
+                color: #202122;
+                border-collapse: collapse;
+                text-align: center;
+                margin: 0.5em 0;
+            }
+        </style>
+        <!--<link href="../asset/css/bootstrap.min.css" rel="stylesheet" />-->
+    </head>
+    <body>
+        <!--
+            표형태를 제작하는 태그는 table
+            tr : 표의 행을 제작할 때 사용. 실제 데이터가 작성되는 공간은 아니다.
+            td : 표의 열을 제작할 때 사용. 실제 데이터를 입력한다.
+            th : 표의 열을 제작할 때 사용. 실제 데이터 입력. 강조 효과
+        -->
+        <table width="300">
+            <tr style="background-color: yellow">
+                <td align="center"><span style="color: #000; font-weight: bold">이름</span></td>
+                <td align="center" colspan="2"><span style="color: #000; font-weight: bold">성별, 주소</span></td>
+                <td align="center"><span style="color: #000; font-weight: bold">직급</span></td>
+            </tr>
+            <tr>
+                <td align="left">정형</td>
+                <td align="left">남자</td>
+                <td align="center">광주</td>
+                <!-- cell 을 세로 방향으로 병합할 때는 rowspan 을 사용한다. rowspan="합칠 값" -->
+                <td align="center" rowspan="2">선임</td>
+            </tr>
+            <tr>
+                <td align="left">손지영</td>
+                <td align="left">여자</td>
+                <td align="center">광주</td>
+            </tr>
+        </table>
+        <div>
+            <h2><span>정규시즌</span> <span style="font-size:14px">[ <a href="#">편집</a> ]</span></h2>
+            <table width="300">
+                <tr>
+                    <th rowspan="2"><span>연도</span></th>
+                    <th colspan="2"><span>순위</span></th>
+                </tr>
+                <tr>
+                    <th><span>종합</span></th>
+                    <th><span>정규</span></th>
+                </tr>
+                <tr>
+                    <td>1982</td>
+                    <td>4</td>
+                    <td>4</td>
+                </tr>
+                <tr style="background-color: #ffd700">
+                    <td>1983</td>
+                    <td>1</td>
+                    <td>
+                        2
+                        <p>(전기리그 1위)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1984</td>
+                    <td>5</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1985</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
