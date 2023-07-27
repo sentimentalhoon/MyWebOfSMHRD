@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="../asset/css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- 
+        리스트 형태를 제작하는 태그 ol VS li
+        ol : ordered list = 정돈이 된 리스트 = 순서가 존재하는 리스트
+        ul : unordered list = 정돈이 되지 않은 리스트 = 순서가 존재하지 않는 리스트
+        li : (공통사항) 실제 컨텐츠(내용)을 작성하는 공간 
+        -->
+        <ol>
+            <li>python</li>
+            <li>java</li>
+            <li>html</li>
+        </ol>
+        <ul>
+            <li>python</li>
+            <li>java</li>
+            <li>html</li>
+        </ul>
+        <h2>마스코트</h2>
+        <ul>
+            <li>호걸이</li>
+            <li>호연이</li>
+            <li>호야</li>
+        </ul>
+        <p><span style="font-size: 14pt; font-weight: bold">각주</span> <a href="#">[ 편집 ]</a></p>
+        <ol>
+            <li>↑ 구단 명칭은 영문 KIA</li>
+            <li>↑ 전·후기</li>
+            <li>↑ <a href="#">해태 기아에 팔린다</a> - 한국경제</li>
+        </ol>
+
+        <!--
+            표형태를 제작하는 태그는 table
+            tr : 표의 행을 제작할 때 사용. 실제 데이터가 작성되는 공간은 아니다.
+            td : 표의 열을 제작할 때 사용. 실제 데이터를 입력한다.
+            th : 표의 열을 제작할 때 사용. 실제 데이터 입력. 강조 효과
+        -->
+        <table class="table" border="1px solid black">            
+            <tr style="background-color: #000">
+                <td align="center"><span style="color: #fff">순위</span></td>
+                <td align="center"><span style="color: #fff">팀이름</span></td>
+                <td align="center"><span style="color: #fff">승</span></td>
+                <td align="center"><span style="color: #fff">패</span></td>
+            </tr>
+            <tr>
+                <td align="center">4</td>
+                <td align="center">5</td>
+                <td align="center">6</td>
+                <td align="center">6</td>
+            </tr>
+            <tr>
+                <td align="center">7</td>
+                <td align="center">8</td>
+                <td align="center">9</td>
+                <td align="center">6</td>
+            </tr>
+        </table>
+    </body>
+</html>
