@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            p {
+                color: navy;
+            }
+            /** <element class="p1"> */
+            .p1 {
+                color: forestgreen;
+            }
+            /** <element id="p2"> */
+            #p2 {
+                color: red;
+            }
+            li {
+                color: purple;
+            }
+            div > ul > li {
+                color: darkblue;
+            }
+            div > ul > .li {
+                color: maroon;
+            }
+            ol > li {
+                color: violet;
+            }
+            #li1 {
+                color:orangered
+            }
+        </style>
+    </head>
+    <body>
+        <p class="p1">첫 번째 p 태그</p>
+        <p id="p2">두 번째 p 태그</p>
+        <p class="p1">세 번째 p 태그</p>
+        <div>
+            <ul>
+                <li class="li">li_1</li>
+                <li id="li1">li_2</li>
+                <li>li_3</li>
+            </ul>
+        </div>
+        <ol>
+            <li>li_1</li>
+            <li>li_2</li>
+            <li>li_3</li>
+        </ol>
+    </body>
+</html>

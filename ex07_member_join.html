@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            div {
+                font-family: sans-serif;
+                color: #202122;
+                direction: ltr;
+                font-size: calc(1em * 0.875);
+                line-height: 1.6;
+            }
+            table {
+                font-family: sans-serif;
+                direction: ltr;
+                line-height: 1.6;
+                font-size: 100%;
+                background-color: #f8f9fa;
+                color: #202122;
+                margin: 1em 0;
+                border: 1px solid #a2a9b1;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            tr {
+                font-family: sans-serif;
+                direction: ltr;
+                line-height: 1.6;
+                font-size: 100%;
+                color: #202122;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            th {
+                font-family: sans-serif;
+                direction: ltr;
+                line-height: 1.6;
+                font-size: 100%;
+                color: #202122;
+                border-collapse: collapse;
+                border: 1px solid #a2a9b1;
+                padding: 0.2em 0.4em;
+                background-color: #eaecf0;
+                text-align: center;
+            }
+            td {
+                font-family: sans-serif;
+                direction: ltr;
+                line-height: 1.6;
+                font-size: 100%;
+                color: #202122;
+                border-collapse: collapse;
+                text-align: center;
+                border: 1px solid #a2a9b1;
+                padding: 0.2em 0.4em;
+            }
+            p {
+                font-family: sans-serif;
+                direction: ltr;
+                line-height: 1.6;
+                font-size: 100%;
+                color: #202122;
+                border-collapse: collapse;
+                text-align: center;
+                margin: 0.5em 0;
+            }
+            textarea {
+                text-align: center;
+                width: 95%;
+                height: 100px;
+                resize: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form action="#" method="get" name="login">
+                <!-- table start -->
+                <table style="width: 400px">
+                    <!-- step1. 아이디 비밀번호 입력란 -->
+                    <tr>
+                        <th colspan="2"><p style="text-align: center">Step 1 : 아이디 / 비밀번호 입력</p></th>
+                    </tr>
+                    <tr>
+                        <td><p style="text-align: right">아이디</p></td>
+                        <td>
+                            <p style="text-align: left"><input type="text" maxlength="12" name="id" /></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p style="text-align: right">비밀번호</p></td>
+                        <td>
+                            <p style="text-align: left"><input type="password" maxlength="12" name="pw" /></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p style="text-align: right">비밀번호 확인</p></td>
+                        <td>
+                            <p style="text-align: left"><input type="password" maxlength="12" name="pw2" /></p>
+                        </td>
+                    </tr>
+                    <!-- step2. 개인정보-->
+                    <tr>
+                        <th colspan="2"><p style="text-align: center">Step 2 : 개인정보</p></th>
+                    </tr>
+                    <tr>
+                        <td><p style="text-align: right">성별</p></td>
+                        <td>
+                            <p style="text-align: left">
+                                <input type="radio" name="sex" value="men" /> 남성
+                                <input type="radio" name="sex" value="women" /> 여성
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p style="text-align: right">혈액형</p></td>
+                        <td>
+                            <p style="text-align: left">
+                                <select>
+                                    <option value="A">A 형</option>
+                                    <option value="B">B 형</option>
+                                    <option value="AB">AB 형</option>
+                                    <option value="O">O 형</option>
+                                </select>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p style="text-align: right">생일</p></td>
+                        <td>
+                            <p style="text-align: left"><input type="date" name="date" value="" placeholder="" /></p>
+                        </td>
+                    </tr>
+                    <!-- step3. 선호도-->
+                    <tr>
+                        <th colspan="2"><p style="text-align: center">Step 3 : 선호도</p></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="text-align: right">취미</p>
+                        </td>
+                        <td>
+                            <p style="text-align: left">
+                                <input type="checkbox" name="football" /> 축구
+                                <input type="checkbox" name="baseball" /> 야구
+                                <input type="checkbox" name="basketball" /> 농구
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p style="text-align: right">좋아하는 색깔</p></td>
+                        <td>
+                            <p style="text-align: left"><input type="color" name="color" /></p>
+                        </td>
+                    </tr>
+                    <!-- step4. 하고 싶은 말-->
+                    <tr>
+                        <th colspan="2"><p style="text-align: center">Step 4 : 하고 싶은 말</p></th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>
+                                <textarea></textarea>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p style="text-align: center">
+                                <input type="submit" name="football" name="submit" value="제출하기" />&nbsp&nbsp&nbsp
+                                <input type="reset" name="football" name="submit" value="초기화하기" />
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- table end -->
+            </form>
+        </div>
+    </body>
+</html>

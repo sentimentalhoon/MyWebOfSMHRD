@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            /**
+                전체선택자 (*) 
+                    - 모든 태그에게 해당 속성을 적용한다.
+            */
+            *{
+                color:blue;
+            }
+            h1 {
+                color: red;
+            }
+            p {
+                /** 폰트 패밀리는 비슷한 폰트를 여러개를 작성
+                - 사용자가 혹은 컴퓨터가 인식못하는 폰트가 존재할 때 대체가 된다.
+            */
+                font-size: 1.2rem;
+                font-family: 'Courier New', Courier, monospace;
+                color:darkolivegreen;
+            }
+            #abc{
+                color:crimson;
+            }
+            .bcd{
+                color:darkgreen
+            }
+        </style>
+    </head>
+    <body>
+        <h1>css</h1>
+        <p>안녕하세요</p>
+        <p id ="abc">안녕하세요</p>
+        <p class="bcd">안녕하세요</p>
+    </body>
+</html>
