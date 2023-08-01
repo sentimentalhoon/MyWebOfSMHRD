@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        
+        <style>
+            /*****
+            블럭요소
+                - 화면상의 길이를 한 줄 전체를 차지
+                - 자동으로 줄바꿈이 일어난다.
+                - 주의점! 블록요소 안에 블록요소의 배치가 불가능하다.
+            인라인 요소
+                - 작성한 컨텐츠의 길이만큼 영역을 차지한다.
+                - 자동 줄바꿈이 일어나지 않는다.
+                - 주의점! 인라인 요소 안에 블록 요소의 배치가 불가능.
+        ******/
+            span {
+                display: none;
+            }
+            a:hover {
+                display: inline;
+                font-weight: bold;
+                color:dodgerblue;
+            }
+            a:hover+span {
+                display: inline;
+                font-size:0.6rem;
+                color:#000;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="#">네이버</a>
+            <span>http://www.naver.com</span>
+        </div>
+        <div>
+            <a href="#">다음</a>
+            <span>http://www.daum.net</span>
+        </div>
+    </body>
+</html>
